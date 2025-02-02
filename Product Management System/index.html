@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Management</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Product Management System</h1>
+        
+        <div class="form">
+            <label for="">Name Product</label>
+            <input class="inputs" id="nameProduct" type="text">
+            
+            <label for="">Price Product</label>
+            <input class="inputs" id="priceProduct" type="text">
+            
+            <label for="">Category Product</label>
+            <input class="inputs" id="categoryProduct" type="text">
+            
+            <label for="">Description Product</label>
+            <textarea class="inputs" name="" id="descriptionProduct"></textarea>
+            
+            <button class="btn" onclick="display()">Add Product</button>
+        </div>
+
+        <div class="display">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Category</th>
+                        <th>Description</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="table">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script/script.js"></script>
+</body>
+</html>
